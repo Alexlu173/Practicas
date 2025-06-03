@@ -1,0 +1,149 @@
+body{
+    font-family: sans-serif, Arial;
+    background-color: rgb(68, 82, 102);
+    margin: 0;
+    padding: 0;
+}
+
+/*Sirve para mantener el footer siempre debajo de la pagina web sin importar el contenido*/
+.global{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    background-color: rgb(148, 156, 180);
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dianoche{
+    background-color: rgb(68, 82, 102);
+    color: antiquewhite;
+    border-radius: 5px;
+    border: none;
+    cursor:pointer;
+    padding: 4px;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li{
+    display:inline;
+    margin: 0 10px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.introduccion{
+    text-align: center;
+    margin-bottom: 40px
+}
+
+.introduccion h1{
+    font-size: 2em;
+    color:rgb(224, 224, 197)
+}
+
+.introduccion p{
+    margin: 10px auto;
+}
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card{
+    border-radius: 20px;
+    background-color: antiquewhite;
+    margin: 5px ;
+    padding: 15px;
+}
+
+.reviews{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.review{
+    background-color: antiquewhite;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0,5s, transform 0,5s;
+}
+
+.review:hover{
+    background-color:rgb(84, 156, 220);
+    transform: translateY(5px);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(148, 156, 180);
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer ul li{
+    display:inline;
+    margin: 0 10px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.modo-dia{
+    background-color: rgb(206, 211, 231);
+}
+
+.modo-dia header,
+.modo-dia footer{
+    background-color: rgb(228, 228, 180);
+}
+
+/*Diseño responsive para moviles*/
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+

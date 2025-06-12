@@ -48,7 +48,14 @@ body{
     padding: 20px;
     margin: 10px;
     gap: 15px;
-    transition: background-color 0.5s, transform 0.5s;
+}
+
+.card{
+    transition: box-shadow 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0 8px 20px rgba(197, 133, 69, 0.548);
 }
 
 .agentes{

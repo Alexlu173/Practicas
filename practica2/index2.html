@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberPulse Labs</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="cambiar-modo.js" defer></script>
+    <style type="text/tailwindcss">
+        @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <div class="global">
+        <header class="navbar shadow-sm flex flex-wrap text-center items-center justify-between px-4">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="index2.html">Principal</a></li>
+                        <li><a href="#contenidos">Contenidos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+                <a class="text-xl font-bold bg-linear-to-r from-indigo-600 to-pink-500 text-white px-2 color-change-2x">CyberPulseLabs</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="index2.html">Principal</a></li>
+                    <li><a href="#contenidos">Contenidos</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <label class="swap swap-rotate">
+                    <input id="theme-controller" type="checkbox" class="theme-controller" value="synthwave" />
+                        <svg class="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 30 30">
+                            <path
+                                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                        </svg>
+                        <svg class="swap-on h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 30 30">
+                            <path
+                                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                        </svg>
+                    </label>
+                </ul>
+            </div>
+            <div class="navbar-end"></div>
+        </header>
+        <main class="flex-grow">
+            <section id="principal" class="relative container mx-auto overflow-hidden px-4 py-16 lg:px-8 lg:py-32 xl:max-w-6xl">
+                <div class="text-center mb-8">
+                    <h1 class="mb-4 text-3xl font-black md:text-5xl">Protección contra ciberamenazas emergentes</h1>
+                    <h3
+                        class="mx-auto text-lg font-medium text-balance text-gray-500 md:text-xl md:leading-relaxed lg:w-2/3">
+                        Buscamos agentes para proteger infraestructuras críticas de posibles amenazas
+                        digitales.
+                    </h3>
+                </div>
+                <div
+                    class="relative rounded-xl bg-white p-2 shadow-lg ring-1 ring-blue-100 lg:mx-40 lg:flex lg:items-center lg:justify-center">
+                    <div class="absolute top-0 left-0 -mt-12 -ml-20 h-48 w-48 rounded-full bg-blue-200/50">
+                    </div>
+                    <div class="absolute top-0 right-0 -mt-20 -mr-16 h-32 w-32 rotate-3 rounded-xl bg-green-200/50">
+                    </div>
+                    <div class="absolute right-0 bottom-0 -mr-16 -mb-10 h-40 w-40 rounded-full bg-gray-200/50">
+                    </div>
+                    <div class="absolute bottom-0 left-0 -mb-16 -ml-12 h-20 w-20 -rotate-12 rounded-xl bg-red-200/50">
+                    </div>
+                    <img src="../imagenes/portada.jpg" alt="Hero Image"
+                        class="relative mx-auto aspect-16/10 w-full rounded-lg object-cover rotate-scale-up" />
+                </div>
+            </section>
+            <section id="contenidos" class="py-10 px-6">
+                <h2 class="text-2xl font-bold text-center mb-6">Áreas principales</h2>
+                <div class="grid gap-6 md:grid-cols-3 ">
+                    <div class="card area-card bg-base-200 shadow">
+                        <figure class="px-10 pt-10">
+                            <img src="../imagenes/supervision.png" alt="Monitoreo" class="roundex-xl" width="100"
+                                height="50">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h4 class="card-title">Monitoreo</h4>
+                            <p class="text-lg">Monitoreo eficaz y de alto rendimiento ante cualquier problema.</p>
+                        </div>
+                    </div>
+                    <div class="card area-card bg-base-200 shadow">
+                        <figure class="px-10 pt-10">
+                            <img src="../imagenes/investigacion.png" alt="Analisis" class="roundex-xl" width="100"
+                                height="50">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h4 class="card-title">Análisis</h4>
+                            <p class="text-lg">Análisis eficaz y consistente ante cualquier ataque cibernético.</p>
+                        </div>
+                    </div>
+                    <div class="card area-card bg-base-200 shadow">
+                        <figure class="px-10 pt-10">
+                            <img src="../imagenes/pregunta-y-respuesta.png" alt="Respuesta" class="roundex-xl" width="100"
+                                height="50">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h4 class="card-title">Respuesta</h4>
+                            <p class="text-lg">Respuesta rápida y precisa a tus problemas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonios" class="bg-base-100 py-10 px-6">
+                <h2 class="text-2xl font-bold text-center mb-10">Lo que dicen nuestros agentes</h2>
+                <div class="flex flex-col gap-6 items-center">
+                    <div class="card bg-base-200 shadow-sm border border-base-300 p-4">
+                        <div class="flex items-start gap-4">
+                            <div class="avatar">
+                                <div class="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                    <img src="/imagenes/agente1.jpg" alt="Agente María" />
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">María Álvarez <span
+                                        class="text-sm text-gray-500">@maria.cyber</span></h3>
+                                <p class="mt-2 text-sm">
+                                    “CyberPulse me entrenó para ver lo invisible. Hoy detecto amenazas antes de que
+                                    ocurran.”
+                                </p>
+                                <div class="mt-4 text-xs text-gray-400 flex justify-between items-center">
+                                    <span>5:48 PM · Jun 12, 2025</span>
+                                    <div class="flex gap-4">
+                                        <span>❤ 231</span>
+                                        <span>💬 64</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-200 shadow-sm border border-base-300 p-4">
+                        <div class="flex items-start gap-4">
+                            <div class="avatar">
+                                <div class="w-12 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
+                                    <img src="/imagenes/agente2.jpg" alt="Agente Fede" />
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Federico León <span
+                                        class="text-sm text-gray-500">@fede.defense</span></h3>
+                                <p class="mt-2 text-sm">
+                                    “Nunca imaginé obtener una respuesta tan rápida hasta ahora. CyberPulse marcó la
+                                    diferencia.”
+                                </p>
+                                <div class="mt-4 text-xs text-gray-400 flex justify-between items-center">
+                                    <span>6:02 PM · Jun 12, 2025</span>
+                                    <div class="flex gap-4">
+                                        <span>❤ 198</span>
+                                        <span>💬 41</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-200 shadow-sm border border-base-300 p-4">
+                        <div class="flex items-start gap-4">
+                            <div class="avatar">
+                                <div class="w-12 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2">
+                                    <img src="/imagenes/agente3.jpg" alt="Agente Clara" />
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Clara Simons <span
+                                        class="text-sm text-gray-500">@clara.ai</span></h3>
+                                <p class="mt-2 text-sm">
+                                    “Gracias al análisis con IA, pudimos anticipar un ciberataque a una central
+                                    crítica.”
+                                </p>
+                                <div class="mt-4 text-xs text-gray-400 flex justify-between items-center">
+                                    <span>6:17 PM · Jun 12, 2025</span>
+                                    <div class="flex gap-4">
+                                        <span>❤ 276</span>
+                                        <span>💬 82</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="noticias" class="py-10 px-6 ">
+                <h2 class="text-2xl font-bold text-center mb-6">Noticias recientes</h2>
+                <div class="grid gap-6 md:grid-cols-3">
+                    <div class="card bg-base-200 shadow">
+                        <div class="card-body items-center text-center">
+                            <h4 class="card-title">⚡ Ataque detenido en 30 segundos</h4>
+                            <p>CyberPulse contuvo una amenaza sobre sistemas energéticos gracias a su sistema de
+                                detección
+                                proactiva.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-200 shadow">
+                        <div class="card-body items-center text-center">
+                            <h4 class="card-title">🧠 Nueva IA de detección en pruebas</h4>
+                            <p>La división de I+D presenta una herramienta basada en redes neuronales con 94% de
+                                efectividad.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-200 shadow">
+                        <div class="card-body items-center text-center">
+                            <h4 class="card-title">🔒 Curso de ciberdefensa para nuevos agentes</h4>
+                            <p>Ya está disponible el nuevo programa de entrenamiento online centrado en ataques de día
+                                cero.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-10 px-6 text-center">
+                <p class="text-lg mb-4">¿Quieres unirte a nosotros?</p>
+                <button id="miembro" class="btn btn-success" value="0">Unirse</button>
+            </section>   
+        </main>
+        <footer class="flex flex-row justify-between footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+            <aside>
+                <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                    clip-rule="evenodd" class="fill-current">
+                    <path
+                        d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                    </path>
+                </svg>
+                <p>
+                    CyberPulseLabs
+                    <br />
+                    Providing reliable tech since 2025
+                </p>
+            </aside>
+            <div>
+                <span class="footer-title">Servicios</span>
+                <a href="#" class="link link-hover">Diseño</a>
+                <a href="#" class="link link-hover">Marketing</a>
+                <a href="#" class="link link-hover">Branding</a>
+            </div>
+            <div>
+                <span class="footer-title">Compañia</span>
+                <a class="link link-hover" href="sobreNosotros.html" >Sobre nosotros</a>
+                <a class="link link-hover" href="Contacto.html">Contacto</a>
+                <a class="link link-hover">Trabajos</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terminos de uso</a>
+                <a class="link link-hover">Politica de privacidad</a>
+                <a class="link link-hover">Politica de cookies</a>
+            </div>
+        </footer>
+    </div>
+    <script src="animacion-cards.js"></script>
+    <script src="boton-unirse.js" defer></script>
+</body>
+</html>

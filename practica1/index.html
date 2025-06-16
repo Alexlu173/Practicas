@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CyberPulse Labs</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="Alejandro Luna" content="Conor Sheils">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+    </head>
+    <body>
+        <div class="global">
+            <header class="flex flex-wrap text-center items-center justify-between bg-gray-600 px-4">
+                <div class="logo">CyberPulseLabs</div>
+                <nav>
+                    <ul>
+                        <li><a href="#principal">Principal</a></li>
+                        <li><a href="#contenidos">Contenidos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <button id="dianoche">Modo Dia</button>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="principal" class="grid grid-column p-[90px] text-gray-100 text-center">
+                    <h1>Proteccion contra ciberamenazas emergentes</h1>
+                    <p>Buscamos agentes para poder proteger las infraestructuras criticas vulnerables y protegerlas de las posibles ciberamenazas</p>
+                </section>
+                <section id="contenidos">
+                    <h3>Areas principales</h3>
+                    <div class="grid grid-cols-3 text-center m-8">
+                        <div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body items-center">
+    <h2 class="card-title">Card Title</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Card Title</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Card Title</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+                    </div>
+                </section>
+                <section id="testimonios" class="reviews">
+                    <h3>Lo que dicen nuestros agentes</h3>
+                    <div class="review">
+                        <span>"CyberPulse me entreno para ver lo invisible" - Agente Maria</span>
+                        <img class="agentes" src="/imagenes/agente1.jpg" width="35" height="35">
+                    </div>
+                    <div class="review">
+                        <span>"Nunca imagine el obtener una respuesta tan rapida hasta ahora" - Agente Fede</span>
+                        <img class="agentes skew-x-6" src="/imagenes/agente2.jpg" width="35" height="35">
+                    </div>
+                </section>
+                <section class="union">
+                    <span>Quieres unirte a nosotros? Pulsa en el boton de abajo</span>
+                    <button id="miembro" value="0">Unirse</button>
+                </section>
+            </main>
+            <div>
+                <footer>
+                    <ul>
+                        <li><a href="#">Redes sociales</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+        <script src="modo-dianoche.js"></script>
+    </body>
+</html>
